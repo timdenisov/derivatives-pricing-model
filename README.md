@@ -53,7 +53,7 @@ Historical data is recommended to be downloaded from FINAM:
 https://www.finam.ru/profile/moex-akcii/gazprom/export/
 
 Expected data format:
-<TICKER>;<PER>;<DATE>;<TIME>;<OPEN>;<HIGH>;<LOW>;<CLOSE>;<VOL>
+TICKER;PER;DATE;TIME;OPEN;HIGH;LOW;CLOSE;VOL
 This format ensures compatibility with the volatility module.
 
 valuation options on key rate.py
@@ -130,7 +130,7 @@ Volatility.py
 https://www.finam.ru/profile/moex-akcii/gazprom/export/
 
 Файлы должны быть приведены к следующему формату:
-<TICKER>;<PER>;<DATE>;<TIME>;<OPEN>;<HIGH>;<LOW>;<CLOSE>;<VOL>
+TICKER;PER;DATE;TIME;OPEN;HIGH;LOW;CLOSE;VOL
 Этот формат используется платформой FINAM и обеспечивает корректную обработку временных рядов.
 
 valuation options on key rate.py
