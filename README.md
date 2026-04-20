@@ -56,25 +56,7 @@ Expected data format:
 TICKER;PER;DATE;TIME;OPEN;HIGH;LOW;CLOSE;VOL
 This format ensures compatibility with the volatility module.
 
-valuation options on key rate.py
-This module implements valuation models for interest rate derivatives, including:
-Interest Rate Caps
-Interest Rate Floors
-options on interest rates
-Pricing is performed using the Vasicek interest rate model.
-The model simulates short-term interest rate dynamics and prices options using Monte Carlo simulation.
 
-Data Sources
-Cbonds
-Historical interest rate data can be obtained from Cbonds:
-https://cbonds.ru/
-
-These data can be used for:
-calibrating Vasicek model parameters
-constructing historical interest rate series
-evaluating interest rate derivatives
-
-Alternatively, model parameters can be estimated independently and specified directly in the code.
 
 🇷🇺 Русская версия
 Описание проекта
@@ -132,36 +114,6 @@ https://www.finam.ru/profile/moex-akcii/gazprom/export/
 Файлы должны быть приведены к следующему формату:
 TICKER;PER;DATE;TIME;OPEN;HIGH;LOW;CLOSE;VOL
 Этот формат используется платформой FINAM и обеспечивает корректную обработку временных рядов.
-
-valuation options on key rate.py
-Данный модуль предназначен для оценки процентных деривативов:
-
-Interest Rate Cap
-Interest Rate Floor
-опционы на процентные ставки
-Оценка осуществляется на основе модели Васичека (Vasicek interest rate model).
-
-Модель используется для моделирования динамики краткосрочной процентной ставки и последующей оценки стоимости процентных опционов методом Monte Carlo simulation.
-
-Источники данных
-Cbonds
-Для работы с процентными инструментами и получения исторических данных по процентным ставкам рекомендуется использовать платформу Cbonds:
-https://cbonds.ru/
-
-Эти данные могут использоваться для:
-калибровки параметров модели Vasicek
-построения временных рядов процентных ставок
-оценки процентных деривативов
-При необходимости параметры модели (волатильность, средняя ставка, скорость возврата к среднему) могут быть рассчитаны самостоятельно и заданы непосредственно в коде.
-
-Назначение проекта
-
-Данный программный комплекс предназначен для:
-количественного анализа производных финансовых инструментов
-тестирования моделей ценообразования
-анализа чувствительности (Greeks)
-исследовательских и учебных задач в области количественных финансов
-
 
 
 
