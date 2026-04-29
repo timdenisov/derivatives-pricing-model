@@ -3,6 +3,7 @@
 **Project for my coursework on "A platform with the function of analyzing and pricing derivatives and interest rate options"**
 
 👉 *Скриншоты работы программы отображены ниже*
+
 👉 *For English version scroll down*
 
 ---
