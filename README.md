@@ -21,6 +21,16 @@
 Идея проекта — сделать **понятный и практичный pricing engine**, близкий к тому, как это делается в реальных задачах.
 
 ---
+## 🎯 Примеры:
+Модуль для вывода Zero Yield Curve, можно сравнивать 2 любые даты
+<img width="998" height="654" alt="image" src="https://github.com/user-attachments/assets/ec0d6a2d-8dc4-4db2-bd56-460a3c8b6571" />
+
+Модуль для оценки Фиксированной ноги IR SWAP
+<img width="997" height="518" alt="image" src="https://github.com/user-attachments/assets/05cbec38-5edf-463f-b900-560029c47085" />
+
+Модуль для оценки процентных опционов CAP/Floor
+<img width="996" height="646" alt="image" src="https://github.com/user-attachments/assets/f053d383-42ac-477c-ab70-02240b854e9b" />
+
 
 ## ⚙️ Что внутри
 
@@ -39,13 +49,8 @@ pip install numpy pandas matplotlib seaborn scipy requests
 python pricing_gui.py
 ```
 
-## 🎯 Что показывает проект
 
-* знание деривативов
-* реализация моделей ценообразования
-* применение численных методов
-* работа с реальными рыночными данными
-<img width="997" height="518" alt="image" src="https://github.com/user-attachments/assets/05cbec38-5edf-463f-b900-560029c47085" />
+
 
 ---
 
