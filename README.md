@@ -5,6 +5,7 @@
 👉 *For English version scroll down*
 
 ---
+<img width="1280" height="1130" alt="image" src="https://github.com/user-attachments/assets/9456b6b1-00df-471d-a672-07cb7a0f4005" />
 
 ## 🇷🇺 О проекте
 
