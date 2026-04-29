@@ -1,6 +1,6 @@
 # 📊 Quant Derivatives Pricing Platform
 
-**Project for my coursework on "A platform with the function of analyzing trading strategies using vanilla and interest rate options"**
+**Project for my coursework on "A platform with the function of analyzing and pricing derivatives and interest rate options"**
 
 👉 *For English version scroll down*
 
