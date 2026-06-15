@@ -1,102 +1,58 @@
-# 📊 Quant Derivatives Pricing Platform
+# Derivatives Pricing GUI
 
-**Project for my coursework on "A platform with the function of analyzing and pricing derivatives and interest rate options"**
+Проект представляет собой desktop-приложение на Python/Tkinter для расчёта опционов, форвардов, свопов, cap/floor, процентных кривых, volatility surface и опционных стратегий.
 
-👉 *Скриншоты работы программы отображены ниже*
+## Запуск
 
-👉 *For English version scroll down*
-
----
-
-
-## 🇷🇺 О проекте
-
-Небольшая платформа для оценки деривативов. Дипломная работа с уклоном в quant.
-
-Внутри реализованы основные типы инструментов:
-
-* опционы (European / American)
-* процентные деривативы (IRS, Cap/Floor)
-* форварды и фьючерсы
-* построение yield curve с MOEX API
-
-Идея проекта — сделать **понятный и практичный pricing engine**, близкий к тому, как это делается в реальных задачах.
-
----
-## 🎯 Примеры:
-Модуль для вывода Zero Yield Curve, можно сравнивать 2 любые даты
-<img width="998" height="654" alt="image" src="https://github.com/user-attachments/assets/ec0d6a2d-8dc4-4db2-bd56-460a3c8b6571" />
-
-Модуль для оценки Фиксированной ноги IR SWAP
-<img width="997" height="518" alt="image" src="https://github.com/user-attachments/assets/05cbec38-5edf-463f-b900-560029c47085" />
-
-Модуль для оценки процентных опционов CAP/Floor
-<img width="996" height="646" alt="image" src="https://github.com/user-attachments/assets/f053d383-42ac-477c-ab70-02240b854e9b" />
-
-
-## ⚙️ Что внутри
-
-* Black-Scholes, Black, Bachelier
-* Monte Carlo, биномиальное дерево, LSM
-* расчет греков (finite differences)
-* работа с реальными данными (MOEX API)
-* простой GUI на Tkinter
-
----
-
-## 🚀 Запуск
+1. Установить Python 3.10 или новее.
+2. Поместить все файлы проекта в одну папку.
+3. Установить зависимости:
 
 ```bash
-pip install numpy pandas matplotlib seaborn scipy requests
+pip install numpy pandas scipy requests seaborn matplotlib plotly kaleido mplcursors openpyxl
+```
+
+Для macOS/Linux при необходимости использовать:
+
+```bash
+python3 -m pip install numpy pandas scipy requests seaborn matplotlib plotly kaleido mplcursors openpyxl
+```
+
+4. Запустить приложение:
+
+```bash
 python pricing_gui.py
 ```
 
-
-
-
----
-
-# 🇬🇧 English
-
-## 📊 About
-
-A small derivatives pricing platform built as a coursework project with a quant focus.
-
-Includes:
-
-* options (European & American)
-* interest rate products (IRS, Cap/Floor)
-* forwards
-* yield curve from MOEX
-
-Goal: build a **simple but realistic pricing engine**.
-
----
-
-## ⚙️ Features
-
-* Black-Scholes, Black, Bachelier
-* Monte Carlo, Binomial Tree, LSM
-* Greeks (finite differences)
-* MOEX market data
-* Simple GUI
-
----
-
-## 🚀 Run
+или:
 
 ```bash
-pip install numpy pandas matplotlib seaborn scipy requests
-python pricing_gui.py
+python3 pricing_gui.py
 ```
 
----
+Главное окно приложения откроется с вкладками для разных расчётов.
 
-## 🎯 What it shows
+## Возможные проблемы
 
-* derivatives knowledge
-* pricing models implementation
-* numerical methods
-* working with real data
+- Для загрузки рыночных и процентных данных нужен доступ к интернету.
+- Если не открываются графики Plotly в PNG, проверьте установку `kaleido`.
+- Если на Linux не запускается Tkinter, может потребоваться установка системного пакета `python3-tk`.
+- Если возникают ошибки с зависимостями, повторно выполните команду установки библиотек.
 
----
+По вопросам и проблемам писать на: tdenisov2004@gmail.com
+
+## Описание файлов
+
+- `pricing_gui.py` — главное GUI-приложение, объединяет все вкладки и вызывает расчётные модули.
+- `pricing__2_.py` — базовые модели для опционов, форвардов и IRS-свопов.
+- `vol_surface.py` — расчёт implied volatility, model price, Greeks и данных для volatility surface.
+- `option_strategy.py` — расчёт опционных стратегий, payoff/profile, Greeks и risk matrix.
+- `market_chain.py` — загрузка и нормализация market chain из CSV/Excel для Vol Surface и Option Strategy.
+- `market_chain_template.xlsx` — шаблон Excel-файла для загрузки рыночной опционной цепочки.
+- `rates_curves.py` — загрузка USD/CNY кривых ставок и расчёт discount/growth factors.
+- `zcyc_построить_на_конкретный_день.py` — загрузка и построение MOEX ZCYC RUB-кривой.
+- `cap_floor_ruon.py` — расчёт cap/floor на RUONIA по моделям Bachelier и Black.
+
+## Результаты работы
+
+При построении интерактивных графиков приложение создаёт файлы в папке `interactive_charts`. Эти файлы можно открывать в браузере или передавать отдельно.
