@@ -24,6 +24,9 @@
 
 <img width="1907" height="1002" alt="image" src="https://github.com/user-attachments/assets/1db46d59-8867-4159-b605-12f05c4a2fae" />
 
+Пользователь задаёт тип актива, стиль опциона, цену базового актива, процентные ставки и дату оценки. В таблицу загружаются опционы с разными страйками, сроками и рыночными ценами.
+Программа рассчитывает implied volatility, модельную цену и основные греки. В нижней части отображается график зависимости волатильности от страйка.
+
 ### Option Strategy
 
 <img width="1906" height="990" alt="image" src="https://github.com/user-attachments/assets/6ed7a499-e68b-4935-aaca-160cc3d8d399" />
