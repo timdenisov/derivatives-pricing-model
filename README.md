@@ -1,5 +1,55 @@
 # Derivatives Pricing GUI
 
+Дипломный проект — настольное приложение на Python для оценки производных финансовых инструментов и анализа рыночных данных.
+
+Программа поддерживает:
+
+* европейские и американские опционы;
+* форварды, процентные свопы, cap и floor;
+* расчёт Delta, Gamma, Vega, Theta и Rho;
+* построение implied volatility surface;
+* анализ опционных стратегий и Risk Matrix;
+* загрузку кривых ставок MOEX и FRED;
+* импорт данных из Excel и CSV.
+
+В расчётах используются модели Black–Scholes, Bachelier, биномиальные и триномиальные деревья, метод Монте-Карло, численный поиск implied volatility и дисконтирование денежных потоков.
+
+## Скриншоты
+
+### Volatility Surface
+
+![Volatility Surface](docs/images/vol_surface.png)
+
+### Option Strategy
+
+![Option Strategy](docs/images/option_strategy.png)
+
+### ZCYC Curve
+
+![ZCYC Curve](docs/images/zcyc_curve.png)
+
+### 3D Implied Volatility Surface
+
+![3D Implied Volatility Surface](docs/images/vol_surface_3d.png)
+
+Проект предназначен для учебных и исследовательских целей.
+
+## Основные модули
+
+* `pricing_gui.py` — графический интерфейс приложения.
+* `pricing__2_.py` — модели опционов, форвардов и IRS.
+* `vol_surface.py` — implied volatility, Greeks и поверхность волатильности.
+* `option_strategy.py` — оценка портфеля, P/L, Greeks и Risk Matrix.
+* `rates_curves.py` — процентные кривые и discount factors.
+* `market_chain.py` — импорт и подготовка рыночных котировок.
+* `cap_floor_ruon.py` — оценка cap/floor на RUONIA.
+
+
+
+
+
+# Derivatives Pricing GUI
+
 Проект представляет собой desktop-приложение на Python/Tkinter для расчёта опционов, форвардов, свопов, cap/floor, процентных кривых, volatility surface и опционных стратегий.
 
 ## Запуск
