@@ -47,21 +47,22 @@
 
 Проект предназначен для учебных и исследовательских целей.
 
-## Основные модули
-
-* `pricing_gui.py` — графический интерфейс приложения.
-* `pricing__2_.py` — модели опционов, форвардов и IRS.
-* `vol_surface.py` — implied volatility, Greeks и поверхность волатильности.
-* `option_strategy.py` — оценка портфеля, P/L, Greeks и Risk Matrix.
-* `rates_curves.py` — процентные кривые и discount factors.
-* `market_chain.py` — импорт и подготовка рыночных котировок.
-* `cap_floor_ruon.py` — оценка cap/floor на RUONIA.
-
-
-
+## Описание файлов
+- `pricing_gui.py` — главное GUI-приложение, объединяет все вкладки и вызывает расчётные модули.
+- `pricing__2_.py` — базовые модели для опционов, форвардов и IRS-свопов.
+- `vol_surface.py` — расчёт implied volatility, model price, Greeks и данных для volatility surface.
+- `option_strategy.py` — расчёт опционных стратегий, payoff/profile, Greeks и risk matrix.
+- `market_chain.py` — загрузка и нормализация market chain из CSV/Excel для Vol Surface и Option Strategy.
+- `market_chain_template.xlsx` — шаблон Excel-файла для загрузки рыночной опционной цепочки.
+- `rates_curves.py` — загрузка USD/CNY кривых ставок и расчёт discount/growth factors.
+- `zcyc_построить_на_конкретный_день.py` — загрузка и построение MOEX ZCYC RUB-кривой.
+- `cap_floor_ruon.py` — расчёт cap/floor на RUONIA по моделям Bachelier и Black.
 
 
-# Derivatives Pricing GUI
+
+
+
+# Как запускать?
 
 Проект представляет собой desktop-приложение на Python/Tkinter для расчёта опционов, форвардов, свопов, cap/floor, процентных кривых, volatility surface и опционных стратегий.
 
@@ -104,17 +105,7 @@ python3 pricing_gui.py
 
 По вопросам и проблемам писать на: tdenisov2004@gmail.com
 
-## Описание файлов
 
-- `pricing_gui.py` — главное GUI-приложение, объединяет все вкладки и вызывает расчётные модули.
-- `pricing__2_.py` — базовые модели для опционов, форвардов и IRS-свопов.
-- `vol_surface.py` — расчёт implied volatility, model price, Greeks и данных для volatility surface.
-- `option_strategy.py` — расчёт опционных стратегий, payoff/profile, Greeks и risk matrix.
-- `market_chain.py` — загрузка и нормализация market chain из CSV/Excel для Vol Surface и Option Strategy.
-- `market_chain_template.xlsx` — шаблон Excel-файла для загрузки рыночной опционной цепочки.
-- `rates_curves.py` — загрузка USD/CNY кривых ставок и расчёт discount/growth factors.
-- `zcyc_построить_на_конкретный_день.py` — загрузка и построение MOEX ZCYC RUB-кривой.
-- `cap_floor_ruon.py` — расчёт cap/floor на RUONIA по моделям Bachelier и Black.
 
 ## Результаты работы
 
