@@ -18,19 +18,22 @@
 
 ### Volatility Surface
 
-![Volatility Surface](docs/images/vol_surface.png)
-
-### Option Strategy
-
-![Option Strategy](docs/images/option_strategy.png)
-
-### ZCYC Curve
-
-![ZCYC Curve](docs/images/zcyc_curve.png)
+<img width="1805" height="891" alt="image" src="https://github.com/user-attachments/assets/39e1de0a-a7f4-45d3-afbe-9a40ea01a8aa" />
 
 ### 3D Implied Volatility Surface
 
-![3D Implied Volatility Surface](docs/images/vol_surface_3d.png)
+<img width="1907" height="1002" alt="image" src="https://github.com/user-attachments/assets/1db46d59-8867-4159-b605-12f05c4a2fae" />
+
+### Option Strategy
+
+<img width="1906" height="990" alt="image" src="https://github.com/user-attachments/assets/6ed7a499-e68b-4935-aaca-160cc3d8d399" />
+
+### ZCYC Curve
+
+<img width="1904" height="956" alt="image" src="https://github.com/user-attachments/assets/c3c3a056-cbbf-4c29-8e7e-d37fbe430319" />
+
+
+
 
 Проект предназначен для учебных и исследовательских целей.
 
